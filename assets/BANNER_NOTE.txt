@@ -1,0 +1,13 @@
+# Banner Asset Note
+
+The `banner.png` file should be added to this directory.
+
+You can screenshot the banner from the Moltchain website's media kit page:
+https://moltchain.xyz/media-kit
+
+Recommended specs:
+- Size: 1500x500 pixels
+- Format: PNG with transparency
+- Shows: Moltchain logo + network visualization + branding
+
+Once you have the banner, place it here as `banner.png` and it will automatically appear in the main README.

@@ -1,0 +1,36 @@
+[profile.default]
+src = "contracts"
+out = "out"
+libs = ["node_modules"]
+test = "test"
+cache_path = "cache_forge"
+
+# Compiler settings
+solc_version = "0.8.20"
+optimizer = true
+optimizer_runs = 200
+via_ir = false
+
+# EVM version
+evm_version = "paris"
+
+# Test settings
+gas_reports = ["*"]
+fuzz_runs = 256
+
+# Formatter
+[fmt]
+line_length = 100
+tab_width = 4
+bracket_spacing = true
+
+# RPC endpoints
+[rpc_endpoints]
+moltchain_testnet = "https://testnet-rpc.moltchain.xyz"
+moltchain_mainnet = "https://rpc.moltchain.xyz"
+base = "https://mainnet.base.org"
+
+# Etherscan verification
+[etherscan]
+moltchain = { key = "${MOLTCHAIN_API_KEY}" }
+base = { key = "${BASESCAN_API_KEY}" }
